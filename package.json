@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "eslint-cli": "^1.1.1"
+    "apollo-server": "^2.8.1",
+    "eslint-cli": "^1.1.1",
+    "graphql": "^14.4.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
