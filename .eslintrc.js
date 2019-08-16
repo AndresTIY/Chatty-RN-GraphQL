@@ -1,26 +1,46 @@
+// module.exports = {
+//   env: {
+//     browser: true,
+//     es6: true,
+//     node: true,
+//   },
+//   extends: [
+//     'airbnb',
+//   ],
+//   globals: {
+//     Atomics: 'readonly',
+//     SharedArrayBuffer: 'readonly',
+//   },
+//   parserOptions: {
+//     ecmaFeatures: {
+//       jsx: true,
+//     },
+//     ecmaVersion: 2018,
+//     sourceType: 'module',
+//   },
+//   plugins: [
+//     'react',
+//   ],
+//   rules: {
+//   },
+// };
+
+
 module.exports = {
-  env: {
-    browser: true,
-    es6: true,
-    node: true,
-  },
-  extends: [
-    'airbnb',
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
   ],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
-  },
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 2018,
-    sourceType: 'module',
-  },
-  plugins: [
-    'react',
-  ],
-  rules: {
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/require-default-props": [0],
+    "react/no-unused-prop-types": [2, {
+      "skipShapeProps": true
+    }],
+    "react/no-multi-comp": [0],
+    "no-bitwise": [0],
   },
 };
